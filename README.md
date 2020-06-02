@@ -10,5 +10,5 @@
 05.19 : CardLayout , Tab , TabItem\
 05.26 : IO패키지 File , 바이트단위 파일 쓰기, 읽기, 파일복사, SimpleDateFormat , Date\
 05.27 : File , FileInputStream, FileOutputStream , 문자 형태의 데이터 파일 read, write, 키보드 입력 System.in ,InputStreamReader, BufferedReader\
-06_01 : DataInputStream , DataOutputStream\n
+06_01 : DataInputStream , DataOutputStream\
 06.02 : Properties
