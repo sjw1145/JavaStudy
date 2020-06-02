@@ -235,6 +235,7 @@ public class SimplaPad extends JFrame {
 		} else {
 			newFile();
 		}
+
 	}
 
 	private void newFile() {
