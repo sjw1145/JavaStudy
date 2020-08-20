@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	
+</head>
+<body>
+	<form name="myForm">
+		입력 <input type="text" name="textInput" value="abc" />
+		<br>
+		<fieldset>
+			<legend>선택하시오</legend>
+			A<input type="checkbox" name="userInput" value="a" checked="checked"/>
+			B<input type="checkbox" name="userInput" value="b" />
+		</fieldset>
+		<input type="file" name="uploadFile" />
+		<br>
+		<input type="button" value="myButton" onclick="sayHello()"/>
+		<input type="reset" />
+		<input type="submit" value="전송" />
+		<input type="image" src="https://icons.iconarchive.com/icons/google/noto-emoji-people-bodyparts/48/11947-middle-finger-light-skin-tone-icon.png" />
+	</form>
+	<script>
+		function sayHello() {
+			document.myForm.textInput.value = "hello";
+		}
+	</script>
+</body>
+</html>

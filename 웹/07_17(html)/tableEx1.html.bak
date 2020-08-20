@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	<style>
+
+		.board {
+			border: 1px solid red;
+			
+		}
+		.board td { border: 1px solid black; }
+		.listData { background-color:blue }
+		#data1, #data2, #data3 {
+			background-color:yellow
+		}
+
+	</style>
+</head>
+<body>
+	<table class="board">
+		<caption>게시판</caption>
+
+		<tr id="headerRow">
+			<td id="data1">번호</td>
+			<td id="data2">제목</td>
+			<td id="data3">글쓴이</td>
+		</tr>
+
+		<tr class="listData" onclick="clickList()">
+			<td>3</td>
+			<td>놀면 뭐하니?</td>
+			<td>유재석</td>
+		</tr>
+
+		<tr class="listData" onclick="clickList()">
+			<td>2</td>
+			<td>행님 뭐합니까?</td>
+			<td>강호동</td>
+		</tr>
+		<tr class="listData" onclick="clickList()">
+			<td>1</td>
+			<td>응?</td>
+			<td>홍길동</td>
+		</tr>
+	</table>
+</body>
+</html>
