@@ -12,6 +12,7 @@ class MethodEx {
 	}	
 	void todo(int n) {
 	}
+	
 	void todo(String str) {
 	}
 	void todo(int n, String str) {

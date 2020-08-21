@@ -3,11 +3,11 @@
 	멤버변수, 메서드 : private, 생략, protected, public
 */
 class Some {
-	private int num = 4;
-
-	private void printNum() {
+	public void printNum() {
 		System.out.println(num);
 	}
+
+	private int num = 4;
 }
 class UseSome {
 	public static void main(String[] args) {

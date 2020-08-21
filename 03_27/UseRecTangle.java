@@ -1,9 +1,9 @@
 /*
-	powerjava 172p 1¹ø
-	»ç°¢ÇüÀ» ³ªÅ¸³»´Â Å¬·¡½º RectangleÀ» ¸¸µé¾îº¸ÀÚ. 
-	»ç°¢ÇüÀº °¡·Î(w)¿Í ¼¼·Î(h)¸¦ °¡Áö¸ç, »ç°¢ÇüÀÇ ³ÐÀÌ¸¦ ¹ÝÈ¯ÇÏ´Â area(), 
-	»ç°¢ÇüÀÇ µÑ·¹¸¦ ¹ÝÈ¯ÇÏ´Â perimeter()µîÀÇ ¸Þ¼Òµå¸¦ °¡Áø´Ù. 
-	rectangle Å¬·¡½º¸¦ ÀÛ¼ºÇÏ°í °´Ã¼¸¦ »ý¼ºÇÏ¿© Å×½ºÆ®ÇÏ¶ó. 
+	powerjava 172p 1ë²ˆ
+	ì‚¬ê°í˜•ì„ ë‚˜íƒ€ë‚´ëŠ” í´ëž˜ìŠ¤ Rectangleì„ ë§Œë“¤ì–´ë³´ìž. 
+	ì‚¬ê°í˜•ì€ ê°€ë¡œ(w)ì™€ ì„¸ë¡œ(h)ë¥¼ ê°€ì§€ë©°, ì‚¬ê°í˜•ì˜ ë„“ì´ë¥¼ ë°˜í™˜í•˜ëŠ” area(), 
+	ì‚¬ê°í˜•ì˜ ë‘˜ë ˆë¥¼ ë°˜í™˜í•˜ëŠ” perimeter()ë“±ì˜ ë©”ì†Œë“œë¥¼ ê°€ì§„ë‹¤. 
+	rectangle í´ëž˜ìŠ¤ë¥¼ ìž‘ì„±í•˜ê³  ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ í…ŒìŠ¤íŠ¸í•˜ë¼. 
 */
 
 class RecTangle{

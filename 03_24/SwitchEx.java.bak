@@ -19,14 +19,16 @@ class SwitchEx {
 		switch( choice ) {
 			default :
 				System.out.println("others");
+				break;
 			case 1:
 				System.out.println("A");
-				
+				break;
 			case 2:
 				System.out.println("B");
-				
+				break;
 			case 3:
-				System.out.println("C");			
+				System.out.println("C");
+			
 		}
 	}
 }

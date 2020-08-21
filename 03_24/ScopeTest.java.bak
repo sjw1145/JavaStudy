@@ -6,6 +6,8 @@ class ScopeTest {
 			n = 2;
 		} else if(!flag) {
 			n = 4;
+		} else {
+			n = 5;
 		}
 		System.out.println(n);
 	}		

@@ -15,8 +15,8 @@ class Human {
 		age = newAge;
 	}
 	/*
-		°´Ã¼ÀÇ »óÅÂ Á¤º¸¸¦ ¹®ÀÚ¿­·Î ¹İÈ¯
-		Á¤ÇØÁø ¾ç½ÄÀÌ³ª Æ÷¸äÀº ¾øÀ½.
+		ê°ì²´ì˜ ìƒíƒœ ì •ë³´ë¥¼ ë¬¸ìì—´ë¡œ ë°˜í™˜
+		ì •í•´ì§„ ì–‘ì‹ì´ë‚˜ í¬ë©§ì€ ì—†ìŒ.
 	*/
 	public String toString() {		
 		return name + "(" + age + ")";
@@ -25,7 +25,7 @@ class Human {
 class UseHuman {
 	public static void main(String[] args) {
 		Human h1 = new Human();
-		h1.setName("¾ÆÀÌÀ¯");
+		h1.setName("ì•„ì´ìœ ");
 		h1.setAge(28);
 		System.out.println(h1);
 

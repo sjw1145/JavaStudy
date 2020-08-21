@@ -1,6 +1,6 @@
 /*
-	Á¢±ÙÀÚ : getter
-	¼³Á¤ÀÚ : setter
+	ì ‘ê·¼ì : getter
+	ì„¤ì •ì : setter
 */
 class Human {
 	private int age = 40;
@@ -12,7 +12,7 @@ class Human {
 	}
 
 	// getter
-	// ¸â¹öº¯¼ö¸¦ ¿ÜºÎ·Î µ¹·ÁÁØ´Ù.
+	// ë©¤ë²„ë³€ìˆ˜ë¥¼ ì™¸ë¶€ë¡œ ëŒë ¤ì¤€ë‹¤.
 	public int getAge() {
 		// ...
 		return age;
@@ -21,7 +21,7 @@ class Human {
 		return name;
 	}
 	// setter
-	// ¸â¹öº¯¼öÀÇ °ªÀ» º¯°æÇÑ´Ù.
+	// ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ì„ ë³€ê²½í•œë‹¤.
 	public void setAge(int newAge) {
 		if(newAge < 100) {
 			age = newAge;
@@ -37,7 +37,7 @@ class UseHuman {
 		//h.age = 1000;
 		h.setAge(40);
 		System.out.println(h.getAge());
-		h.setName("È«±æµ¿");
+		h.setName("í™ê¸¸ë™");
 		System.out.println(h.getName());
 	}
 }

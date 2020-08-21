@@ -6,8 +6,12 @@ class Stock {
 		count : 증가시킬 수량
 	*/
 	void increase(int count) {
-		amount += count;
-		printAmount();
+		if(count > 0) {
+			amount += count;
+			printAmount();
+		} else {
+			System.out.println("증가수량은 0 또는 음수일 수 없습니다.");
+		}
 	}
 	/*
 		재고수량 감소
@@ -35,7 +39,7 @@ class Page157_6 {
 		// 재고수량 설정
 		s.amount = 100;
 
-		s.increase(30);
+		s.increase(-30);
 		
 		s.decrease(150);
 	}

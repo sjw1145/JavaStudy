@@ -1,10 +1,10 @@
 class BankAccount {
 	int balance;
-	// ÀÔ±Ý
+	// ìž…ê¸ˆ
 	void deposit(int amount) {
 		balance += amount;
 	}
-	// Ãâ±Ý
+	// ì¶œê¸ˆ
 	void withdraw(int amount) {
 		if(amount <= balance) {
 			balance -= amount;

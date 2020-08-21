@@ -11,11 +11,11 @@ class VendingMachine {
 	private int colaStock;
 	private int ciderStock;
 	
-	//ìƒì„±ì
+	//»ı¼ºÀÚ
 	public VendingMachine() {
-		this.color = "ì´ˆë¡";
+		this.color = "ÃÊ·Ï";
 		this.money = 0;
-		this.manufacturer = "ë¡¯ë°ì¹ ì„±";
+		this.manufacturer = "·Ôµ¥Ä¥¼º";
 	}
 	public VendingMachine(Drink cola, Drink cider) {
 		this();
@@ -68,26 +68,26 @@ class VendingMachine {
 		this.cider = cider;
 	}
 
-	// 1 . ê¸ˆì•¡ íˆ¬ì…
+	// 1 . ±İ¾× ÅõÀÔ
 	public void moneyInput(int money) {
 		Scanner kb = new Scanner(System.in);
-		// ìíŒê¸°ì— ê¸ˆì•¡ ì„¤ì •
+		// ÀÚÆÇ±â¿¡ ±İ¾× ¼³Á¤
 		setMoney(money);
 		System.out.println(toString());
 	}
 
-	// 2. ì œí’ˆ ì„ íƒê³¼ ë™ì‹œì— ë°˜í™˜
+	// 2. Á¦Ç° ¼±ÅÃ°ú µ¿½Ã¿¡ ¹İÈ¯
 	public Drink productSelect() {
 		Scanner kb = new Scanner(System.in);
 		Drink temp;
 		
-		System.out.println("1. ì½œë¼\t 2.ì‚¬ì´ë‹¤");
+		System.out.println("1. Äİ¶ó\t 2.»çÀÌ´Ù");
 		int choice = kb.nextInt();
 		switch (choice) {
-			// ì˜ ëª» ì„ íƒí•˜ë©´ ë¬´ì¡°ê±´ ì½œë¼ë°˜í™˜
+			// Àß ¸ø ¼±ÅÃÇÏ¸é ¹«Á¶°Ç Äİ¶ó¹İÈ¯
 			default:
 			case 1:
-				// ì„ íƒí•œ ì œí’ˆ ë°˜í™˜
+				// ¼±ÅÃÇÑ Á¦Ç° ¹İÈ¯
 				temp = returnDrink(choice);
 				setColaStock(getColaStock()-1);
 				return temp;
@@ -98,40 +98,40 @@ class VendingMachine {
 		}
 	}
 
-	// 3. ì œí’ˆ ë°˜í™˜ ë©”ì†Œë“œ
+	// 3. Á¦Ç° ¹İÈ¯ ¸Ş¼Òµå
 	private Drink returnDrink(int choice) {
 		Drink temp;
 		switch (choice) {
 			default:
 			case 1:
 				temp = getCola();
-				// ìíŒê¸° í˜„ì¬ ê¸ˆì•¡ì—ì„œ ìŒë£Œì˜ ê°€ê²©ì„ ëºŒ
+				// ÀÚÆÇ±â ÇöÀç ±İ¾×¿¡¼­ À½·áÀÇ °¡°İÀ» »­
 				setMoney(getMoney() - cola.getPrice());
 				cola = null;
 				return temp;
 			case 2:
 				temp = getCider();
-				// ìíŒê¸° í˜„ì¬ ê¸ˆì•¡ì—ì„œ ìŒë£Œì˜ ê°€ê²©ì„ ëºŒ
+				// ÀÚÆÇ±â ÇöÀç ±İ¾×¿¡¼­ À½·áÀÇ °¡°İÀ» »­
 				setMoney(getMoney() - getCider().getPrice());
 				cider = null;
 				return temp;
 		}
 	}
 
-	// 4. ì”ëˆ ë°˜í™˜
+	// 4. ÀÜµ· ¹İÈ¯
 	public int returnMoney() {
 		if (getMoney() > 0) {
-			System.out.println("ì”ëˆ : "+getMoney());
+			System.out.println("ÀÜµ· : "+getMoney());
 			return getMoney();
 		} else {
-			System.out.println("ë°˜í™˜ í•  ëˆì´ ì—†ìŒ!");
+			System.out.println("¹İÈ¯ ÇÒ µ·ÀÌ ¾øÀ½!");
 			return 0;
 		}
 	}
 	
 	public String toString() {
-		String info = "ìíŒê¸° [ "+getManufacturer()+"\t"+ getColor()+" ]"+"\tí˜„ì¬ ê¸ˆì•¡ : " + getMoney()+"\n";
-		info += "ì¬ê³  [ ì½”ì¹´ì½œë¼ : " + getColaStock() + " ì‚¬ì´ë‹¤ : " + getCiderStock()+" ]";
+		String info = "ÀÚÆÇ±â [ "+getManufacturer()+"\t"+ getColor()+" ]"+"\tÇöÀç ±İ¾× : " + getMoney()+"\n";
+		info += "Àç°í [ ÄÚÄ«Äİ¶ó : " + getColaStock() + " »çÀÌ´Ù : " + getCiderStock()+" ]";
 		return info;
 	}
 }

@@ -6,7 +6,7 @@ public class DaysInMonth {
 		int year = 2009;
 		int days = 0;
 
-		System.out.print("ÀÏ¼ö¸¦ ¾Ë°í ½ÍÀº ´ŞÀ» ÀÔ·ÂÇÏ½Ã¿À:");
+		System.out.print("ì¼ìˆ˜ë¥¼ ì•Œê³  ì‹¶ì€ ë‹¬ì„ ì…ë ¥í•˜ì‹œì˜¤:");
 		Scanner scan = new Scanner(System.in);
 		month = scan.nextInt();
 	
@@ -38,16 +38,16 @@ public class DaysInMonth {
 					) {
 					days = 29;
 				} else {
-					// Æò³â
+					// í‰ë…„
 					days = 28;
 				}
 				break;
 			default:
-				System.out.println("¿ùÀÌ Àß¸ø ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+				System.out.println("ì›”ì´ ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 				break;
 		}
 		if(days != 0) {
-			System.out.println("¿ùÀÇ ³¯¼ö´Â " + days);
+			System.out.println("ì›”ì˜ ë‚ ìˆ˜ëŠ” " + days);
 		}
 	}
 }

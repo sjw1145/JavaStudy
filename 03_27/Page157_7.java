@@ -19,24 +19,24 @@ class Dog {
 		return name + "(" + kind + ", " + color + ")";
 	}
 	void bark() {
-		System.out.println("¸Û¸Û¸Û~");
+		System.out.println("ë©ë©ë©~");
 	}
 	void bite(String what) {
-		System.out.println(getInfo() + "ÀÌ(°¡) " + what + "À»(¸¦) ¹°¾î¿ä~");
+		System.out.println(getInfo() + "ì´(ê°€) " + what + "ì„(ë¥¼) ë¬¼ì–´ìš”~");
 	}
 	void eat(String what) {
-		System.out.println(getInfo() + "ÀÌ(°¡) " + what + "À»(¸¦) ¸Ô¾î¿ä~");
+		System.out.println(getInfo() + "ì´(ê°€) " + what + "ì„(ë¥¼) ë¨¹ì–´ìš”~");
 	}
 }
 class Page157_7 {
 	public static void main(String[] args) {
 		Dog d = new Dog();
-		d.name = "¹ÙµÏÀÌ";
-		d.kind = "¸»Æ¼½º";
-		d.color = "Èò»ö";
+		d.name = "ë°”ë‘‘ì´";
+		d.kind = "ë§í‹°ìŠ¤";
+		d.color = "í°ìƒ‰";
 
 		d.bark();
-		d.eat("¼Ò°í±â");
-		d.bite("»ç¶÷");
+		d.eat("ì†Œê³ ê¸°");
+		d.bite("ì‚¬ëŒ");
 	}
 }

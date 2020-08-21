@@ -4,9 +4,9 @@ class PrintfEx {
 		// "010-2361-4414"
 		Scanner scan = new Scanner(System.in);
 
-		System.out.print("ÀüÈ­¹øÈ£ ¾ÕÀÚ¸®ÀÔ·Â : ");
+		System.out.print("ì „í™”ë²ˆí˜¸ ì•ìë¦¬ì…ë ¥ : ");
 		int head = scan.nextInt();
-		System.out.print("ÀüÈ­¹øÈ£ µŞÀÚ¸®ÀÔ·Â : ");
+		System.out.print("ì „í™”ë²ˆí˜¸ ë’·ìë¦¬ì…ë ¥ : ");
 		int body = scan.nextInt();
 		
 		System.out.printf("010-%d-%d\n", head, body);

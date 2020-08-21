@@ -4,7 +4,7 @@ class DiceGame{
 	private int userGuess;
 
 	private int getUserInput(){
-		System.out.println("¿¹»ó°ªÀ» ÀÔ·ÂÇÏ½Ã¿À:");
+		System.out.println("ì˜ˆìƒê°’ì„ ì…ë ¥í•˜ì‹œì˜¤:");
 		Scanner s = new Scanner(System.in);
 		return s.nextInt();
 	}
@@ -13,18 +13,18 @@ class DiceGame{
 	}
 	private boolean checkUserGuess() {
 		if (diceFace == userGuess) { 
-			System.out.println("¸Â¾Ò½À´Ï´Ù");
+			System.out.println("ë§ì•˜ìŠµë‹ˆë‹¤");
 			return false;
 		}else{
-			System.out.println("Æ²·È½À´Ï´Ù");
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤");
 			return true;
 		}
 	}
 	public void startPlaying(){
-		// ³­¼ö ¹ß»ı
+		// ë‚œìˆ˜ ë°œìƒ
 		diceFace = rollDice();
 		do {
-			// »ç¿ëÀÚ ÀÔ·Â Ã³¸®
+			// ì‚¬ìš©ì ì…ë ¥ ì²˜ë¦¬
 			userGuess = getUserInput() ;
 		} while(checkUserGuess());
 	}

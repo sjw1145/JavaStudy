@@ -1,18 +1,18 @@
 /*
 	escape character : \
 
-	\n : ÁÙ¹Ù²Ş
-	\" : ±ÛÀÚ "
+	\n : ì¤„ë°”ê¿ˆ
+	\" : ê¸€ì "
 	\t : tab
-	\\ : ±ÛÀÚ \
+	\\ : ê¸€ì \
 		"C:\Program Files\Java\jdk1.8.0_241"
 	"hello" -> String
 */
 
 class EscapeCharEx {
 	public static void main(String[] args) {
-		// ¾Æ¹öÁö°¡ "³ª°¡" ¶ó°í ÇÏ¼Ì´Ù.
-		System.out.println("¾Æ¹öÁö°¡ \"³ª°¡\" ¶ó°í ÇÏ\n¼Ì´Ù.");
+		// ì•„ë²„ì§€ê°€ "ë‚˜ê°€" ë¼ê³  í•˜ì…¨ë‹¤.
+		System.out.println("ì•„ë²„ì§€ê°€ \"ë‚˜ê°€\" ë¼ê³  í•˜\nì…¨ë‹¤.");
 		System.out.println("C:\\Program Files\\Java\\jdk1.8.0_241");
 	}
 }

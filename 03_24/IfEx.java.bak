@@ -33,7 +33,7 @@ class IfEx {
 		int n = 3;
 
 		System.out.println((n == 2) ? "A" : (n >= 3)? "B" : "C");
-
+		(n == 2) ? "A" : "B";
 
 		/*
 		int num = 4;

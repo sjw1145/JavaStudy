@@ -31,7 +31,7 @@ class UseOperations {
 		// int plus2(int num1) { ... }
 		o.plus2(100);
 		int opResult = o.plus2(10);
-		//System.out.println(opResult);
+		System.out.println(opResult);
 		System.out.println(o.plus2(8));
 
 		o.printSum(100, 20);

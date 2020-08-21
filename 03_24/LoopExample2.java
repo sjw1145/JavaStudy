@@ -2,7 +2,7 @@ class LoopExample2 {
 	public static void main(String[] args) {
 		int n;
 		int i = 1;
-		System.out.print("±¸±¸´Ü Áß¿¡¼­ Ãâ·ÂÇÏ°í ½ÍÀº ´ÜÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
+		System.out.print("êµ¬êµ¬ë‹¨ ì¤‘ì—ì„œ ì¶œë ¥í•˜ê³  ì‹¶ì€ ë‹¨ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
 		Scanner scan = new Scnaner(System.in);
 		n = scan.nextInt();
 		while (i<= 9) {

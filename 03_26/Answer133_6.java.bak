@@ -14,7 +14,7 @@ class Answer133_6 {
 		for(int num=2; num<=100; num++) {
 			// num : 2 ~ 100
 			boolean isPrime = true;
-			for(int divider=2; isPrime && divider<num; divider++) {
+			for(int divider=2; isPrime && divider<=(num/2); divider++) {
 				// divider : 2 ~ (num - 1)
 				if(num % divider == 0) {
 					// num는 소수가 아님

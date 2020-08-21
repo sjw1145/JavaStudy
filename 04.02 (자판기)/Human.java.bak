@@ -42,24 +42,24 @@ class Human {
 		if (getDrink() != null) {
 			return toString();
 		} else {
-			String info = getName() + "ëŠ”(ì€) " + getMoney() + "ì›ì„ ê°€ì§€ê³  ì•„ë¬´ê²ƒë„ ì•ˆí•˜ê³  ê·¸ëƒ¥ ê°”ìŠµë‹ˆë‹¤.";
+			String info = getName() + "´Â(Àº) " + getMoney() + "¿øÀ» °¡Áö°í ¾Æ¹«°Íµµ ¾ÈÇÏ°í ±×³É °¬½À´Ï´Ù.";
 			return info;
 		}
 	}
 
 	public String toString() {
-		String info = getName() + "ëŠ”(ì€) ìíŒê¸°ì—ì„œ ";
-		info += getDrink().getProduct() + "ë¥¼ ë°›ì•„ ë§ˆì…¨ìŠµë‹ˆë‹¤.";
-		info += "ê·¸ë¦¬ê³  ëˆì€ " + getMoney() + "ì›ì´ ë‚¨ì•˜ìŠµë‹ˆë‹¤";
+		String info = getName() + "´Â(Àº) ÀÚÆÇ±â¿¡¼­ ";
+		info += getDrink().getProduct() + "¸¦ ¹Ş¾Æ ¸¶¼Ì½À´Ï´Ù.";
+		info += "±×¸®°í µ·Àº " + getMoney() + "¿øÀÌ ³²¾Ò½À´Ï´Ù";
 		return info;
 	}
 
-	// ì–¼ë§ˆë¥¼ ë„£ì„ê¹Œ? (ì‚¬ëŒì´ ì •í•´ì•¼ í•¨)
+	// ¾ó¸¶¸¦ ³ÖÀ»±î? (»ç¶÷ÀÌ Á¤ÇØ¾ß ÇÔ)
 	public int howMuch() {
 		Scanner kb = new Scanner(System.in);
-		System.out.print(getName()+"ëŠ”(ì€) ìíŒê¸°ì— ì–¼ë§ˆë¥¼ ë„£ì„ê¹Œìš”? ");
+		System.out.print(getName()+"´Â(Àº) ÀÚÆÇ±â¿¡ ¾ó¸¶¸¦ ³ÖÀ»±î¿ä? ");
 		int howMoney = kb.nextInt();
-		// ê°€ì§„ ëˆê³¼ ì–¼ë§ˆë¥¼ ë„£ì„ì§€ ë¹„êµí•´ì„œ ê°€ì§„ ëˆì´ ë§ê±°ë‚˜ ê°™ìœ¼ë©´ ë„£ìŒ
+		// °¡Áø µ·°ú ¾ó¸¶¸¦ ³ÖÀ»Áö ºñ±³ÇØ¼­ °¡Áø µ·ÀÌ ¸¹°Å³ª °°À¸¸é ³ÖÀ½
 		if (getMoney() >= howMoney) {
 			return howMoney;
 		} else {
@@ -69,7 +69,7 @@ class Human {
 
 	public int what() {
 		Scanner kb = new Scanner(System.in);
-		System.out.println("1. ì œí’ˆì„ íƒ\t 2. ì”ëˆë°˜í™˜");
+		System.out.println("1. Á¦Ç°¼±ÅÃ\t 2. ÀÜµ·¹İÈ¯");
 		int choice = kb.nextInt();
 		switch (choice) {
 			case 1:
@@ -81,27 +81,27 @@ class Human {
 	}
 
 	public Drink order(VendingMachine vm) {
-		// ì–¼ë§ˆë¥¼ ë„£ì„ì§€ ì •í•œë‹¤.
+		// ¾ó¸¶¸¦ ³ÖÀ»Áö Á¤ÇÑ´Ù.
 		int money = howMuch();
 		if (money != 0) {
-			// ì‚¬ëŒì˜ ëˆì„ ë„£ì€ ëˆ ë§Œí¼ ëº€ë‹¤.
+			// »ç¶÷ÀÇ µ·À» ³ÖÀº µ· ¸¸Å­ »«´Ù.
 			setMoney(getMoney() - money);
-			// ìíŒê¸°ì— ëˆì„ ë„£ëŠ”ë‹¤.
+			// ÀÚÆÇ±â¿¡ µ·À» ³Ö´Â´Ù.
 			vm.moneyInput(money);
-			//ì œí’ˆì„ ì„ íƒí• ê±´ì§€ ì œí’ˆì„ ë°˜í™˜í• ê»€ì§€
+			//Á¦Ç°À» ¼±ÅÃÇÒ°ÇÁö Á¦Ç°À» ¹İÈ¯ÇÒ²«Áö
 			int num = what();
-			//ì œí’ˆì„ íƒ
+			//Á¦Ç°¼±ÅÃ
 			if(num == 1) {
-			// ì œí’ˆì„ ì„ íƒí•˜ë©´ ìíŒê¸°ì—ì„œ ìƒí’ˆì´ ë‚˜ì˜¨ë‹¤.
+			// Á¦Ç°À» ¼±ÅÃÇÏ¸é ÀÚÆÇ±â¿¡¼­ »óÇ°ÀÌ ³ª¿Â´Ù.
 				Drink temp = vm.productSelect();
-				// ì œí’ˆì´ ë°˜í™˜ëìœ¼ë©´ ìŒë£Œë¥¼ ë°›ê³  ì”ëˆì„ ë°›ì•„ ë¦¬í„´í•¨
+				// Á¦Ç°ÀÌ ¹İÈ¯µÆÀ¸¸é À½·á¸¦ ¹Ş°í ÀÜµ·À» ¹Ş¾Æ ¸®ÅÏÇÔ
 				if (temp != null) {
-					// ê·¸ ë‹¤ìŒ ì”ëˆì„ ë°˜í™˜í•œë‹¤. (ìíŒê¸°ì—ì„œ ë°˜í™˜ ë²„íŠ¼ì„ ëˆ„ë¥´ëŠ”ê±°)
+					// ±× ´ÙÀ½ ÀÜµ·À» ¹İÈ¯ÇÑ´Ù. (ÀÚÆÇ±â¿¡¼­ ¹İÈ¯ ¹öÆ°À» ´©¸£´Â°Å)
 					setMoney(getMoney() + vm.returnMoney());
 					return temp;
 				}
 			} else {
-				//ì”ëˆë°˜í™˜
+				//ÀÜµ·¹İÈ¯
 				setMoney(getMoney() + vm.returnMoney());
 			}
 		}

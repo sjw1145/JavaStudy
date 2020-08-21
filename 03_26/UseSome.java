@@ -1,9 +1,9 @@
 class Some {
-	int num;		// ¸â¹öº¯¼ö
+	int num;		// ë©¤ë²„ë³€ìˆ˜
 }
 class UseSome {
 	public static void main(String[] args) {
-		Some s1 = new Some();	// °´Ã¼»ı¼º
+		Some s1 = new Some();	// ê°ì²´ìƒì„±
 		s1.num = 30;
 		
 		Some s2 = new Some();

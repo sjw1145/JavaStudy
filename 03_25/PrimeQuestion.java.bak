@@ -1,19 +1,19 @@
 import java.util.Scanner;
 /*
-2ì™€ 100ì‚¬ì´ì— ìžˆëŠ” ëª¨ë“  ì†Œìˆ˜ë¥¼ ì°¾ëŠ” í”„ë¡œê·¸ëž¨ ìž‘ì„±.
-ì •ìˆ˜ kë¥¼ 2ë¶€í„° k - 1 ê¹Œì§€ì˜ ìˆ«ìžë¡œ ë‚˜ëˆ„ì–´ì„œ ë‚˜ë¨¸ì§€ê°€ 0ì¸ ê²ƒì´ í•˜ë‚˜ë¼ë„ ìžˆìœ¼ë©´ ì†Œìˆ˜ ì•„ë‹˜
+2¿Í 100»çÀÌ¿¡ ÀÖ´Â ¸ðµç ¼Ò¼ö¸¦ Ã£´Â ÇÁ·Î±×·¥ ÀÛ¼º.
+Á¤¼ö k¸¦ 2ºÎÅÍ k - 1 ±îÁöÀÇ ¼ýÀÚ·Î ³ª´©¾î¼­ ³ª¸ÓÁö°¡ 0ÀÎ °ÍÀÌ ÇÏ³ª¶óµµ ÀÖÀ¸¸é ¼Ò¼ö ¾Æ´Ô
  */
 public class PrimeQuestion {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
-		// ì†Œìˆ˜ì¸ì§€ ì•„ë‹Œì§€ ì²´í¬ í•˜ë ¤ê³ 
+		// ¼Ò¼öÀÎÁö ¾Æ´ÑÁö Ã¼Å© ÇÏ·Á°í
 		boolean isPrime;
 		int primeNumber;
 
-		// 2~100 ì‚¬ì´ ì•„ë‹ˆë©´ ë‹¤ì‹œ ìž…ë ¥ë°›ê²Œ í•˜ë ¤ê³  ë°˜ë³µ
+		// 2~100 »çÀÌ ¾Æ´Ï¸é ´Ù½Ã ÀÔ·Â¹Þ°Ô ÇÏ·Á°í ¹Ýº¹
 		do {
-			System.out.print("2~100ì‚¬ì´ì˜ ì •ìˆ˜ ìž…ë ¥ :");
+			System.out.print("2~100»çÀÌÀÇ Á¤¼ö ÀÔ·Â :");
 			primeNumber = kb.nextInt();
 
 		} while (primeNumber >= 2 != primeNumber <= 100);
@@ -23,12 +23,12 @@ public class PrimeQuestion {
 			for (int j = 2; j < i; j++) {
 
 				if (i % j == 0) {
-					// ì†Œìˆ˜ê°€ ì•„ë‹˜
+					// ¼Ò¼ö°¡ ¾Æ´Ô
 					isPrime = false;
 				}
 			}
 			if (isPrime == true) {
-				System.out.printf("ì†Œìˆ˜ : %d\n", i);
+				System.out.printf("¼Ò¼ö : %d\n", i);
 			}
 		}
 

@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 /*
-ë‹¤ìŒê³¼ ê°™ì´ ì •ì˜ë˜ëŠ” í•¨ìˆ˜ì˜ í•¨ìˆ˜ê°’ì„ ê³„ì‚°
-(ì‚¬ìš©ì ì…ë ¥ x)
+´ÙÀ½°ú °°ÀÌ Á¤ÀÇµÇ´Â ÇÔ¼öÀÇ ÇÔ¼ö°ªÀ» °è»ê
+(»ç¿ëÀÚ ÀÔ·Â x)
 
-f(x) = x^3 - 9x + 2 	x <= 0 //ì¡°ê±´
-f(x) = 7x + 2 			x > 0 //ì¡°ê±´
+f(x) = x^3 - 9x + 2 	x <= 0 //Á¶°Ç
+f(x) = 7x + 2 			x > 0 //Á¶°Ç
 */
 public class FuncQuestion {
 	public static void main(String[] args) {

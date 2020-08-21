@@ -8,8 +8,9 @@ class PrintfEx {
 		int head = scan.nextInt();
 		System.out.print("전화번호 뒷자리입력 : ");
 		int body = scan.nextInt();
-
-		System.out.println("010-" + head + "-" + body);
+		
+		System.out.printf("010-%d-%d\n", head, body);
+		//System.out.println("010-" + head + "-" + body);
 
 
 	}

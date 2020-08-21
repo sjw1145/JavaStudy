@@ -6,7 +6,9 @@ class BankAccount {
 	}
 	// √‚±›
 	void withdraw(int amount) {
-		balance -= amount;
+		if(amount <= balance) {
+			balance -= amount;
+		}
 	}
 	int getBalance() {
 		return balance;
@@ -15,7 +17,7 @@ class BankAccount {
 		balance += (int)(balance * 0.075);
 	}
 }
-class BankAccountTest {
+public class BankAccountTest {
 	public static void main(String[] args) {
 		BankAccount b = new BankAccount();
 		b.deposit(100);

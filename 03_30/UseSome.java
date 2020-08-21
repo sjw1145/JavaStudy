@@ -1,6 +1,6 @@
 /*
-	ÀÏ¹İÀûÀÎ Å¬·¡½º : »ı·«, public
-	¸â¹öº¯¼ö, ¸Ş¼­µå : private, »ı·«, protected, public
+	ì¼ë°˜ì ì¸ í´ë˜ìŠ¤ : ìƒëµ, public
+	ë©¤ë²„ë³€ìˆ˜, ë©”ì„œë“œ : private, ìƒëµ, protected, public
 */
 class Some {
 	public void printNum() {

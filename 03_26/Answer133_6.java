@@ -1,5 +1,5 @@
 /*
-	- 2 ~ 100 »çÀÌ ¼Ò¼ö Ã£±â
+	- 2 ~ 100 ì‚¬ì´ ì†Œìˆ˜ ì°¾ê¸°
 
 	1. 2 ~ 100 : num
 	2.	num	:	divider ( 2 ~ num-1)
@@ -17,16 +17,16 @@ class Answer133_6 {
 			for(int divider=2; isPrime && divider<=(num/2); divider++) {
 				// divider : 2 ~ (num - 1)
 				if(num % divider == 0) {
-					// num´Â ¼Ò¼ö°¡ ¾Æ´Ô
+					// numëŠ” ì†Œìˆ˜ê°€ ì•„ë‹˜
 					isPrime = false;
 				}
 				count++;
 			}
-			// ¼Ò¼ö¸é Ãâ·Â
+			// ì†Œìˆ˜ë©´ ì¶œë ¥
 			if(isPrime) {
 				System.out.println(num);
 			}
 		}
-		System.out.println("¹İº¹È½¼ö : " + count); 
+		System.out.println("ë°˜ë³µíšŸìˆ˜ : " + count); 
 	} 
 }

@@ -1,21 +1,21 @@
 class Stock {
-	String no;		// Á¦Ç°¹øÈ£
-	int amount;		// Á¦Ç°¼ö·®
+	String no;		// ì œí’ˆë²ˆí˜¸
+	int amount;		// ì œí’ˆìˆ˜ëŸ‰
 	/*
-		Àç°í¼ö·® Áõ°¡
-		count : Áõ°¡½ÃÅ³ ¼ö·®
+		ì¬ê³ ìˆ˜ëŸ‰ ì¦ê°€
+		count : ì¦ê°€ì‹œí‚¬ ìˆ˜ëŸ‰
 	*/
 	void increase(int count) {
 		if(count > 0) {
 			amount += count;
 			printAmount();
 		} else {
-			System.out.println("Áõ°¡¼ö·®Àº 0 ¶Ç´Â À½¼öÀÏ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì¦ê°€ìˆ˜ëŸ‰ì€ 0 ë˜ëŠ” ìŒìˆ˜ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
 	}
 	/*
-		Àç°í¼ö·® °¨¼Ò
-		count : °¨¼Ò½ÃÅ³ ¼ö·®
+		ì¬ê³ ìˆ˜ëŸ‰ ê°ì†Œ
+		count : ê°ì†Œì‹œí‚¬ ìˆ˜ëŸ‰
 	*/
 	void decrease(int count) {
 		if(count<=amount) {
@@ -23,20 +23,20 @@ class Stock {
 			amount -= count;
 			printAmount();
 		} else {
-			System.out.println("Àç°í¼ö·®ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("ì¬ê³ ìˆ˜ëŸ‰ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 		}		
 	}
-	// ÇöÀç¼ö·®À» Ãâ·Â
+	// í˜„ì¬ìˆ˜ëŸ‰ì„ ì¶œë ¥
 	void printAmount() {
-		System.out.println(no + "¹ø Àç°í¼ö·® : " + amount);
+		System.out.println(no + "ë²ˆ ì¬ê³ ìˆ˜ëŸ‰ : " + amount);
 	}
 }
 class Page157_6 {
 	public static void main(String[] args) {
 		Stock s = new Stock();
-		// Á¦Ç°¹øÈ£ ¼³Á¤		
+		// ì œí’ˆë²ˆí˜¸ ì„¤ì •		
 		s.no = "p00001";
-		// Àç°í¼ö·® ¼³Á¤
+		// ì¬ê³ ìˆ˜ëŸ‰ ì„¤ì •
 		s.amount = 100;
 
 		s.increase(-30);

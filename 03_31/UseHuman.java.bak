@@ -14,8 +14,11 @@ class Human {
 	public void setAge(int newAge) {
 		age = newAge;
 	}
-	public String toString() {
-		
+	/*
+		객체의 상태 정보를 문자열로 반환
+		정해진 양식이나 포멧은 없음.
+	*/
+	public String toString() {		
 		return name + "(" + age + ")";
 	}
 }

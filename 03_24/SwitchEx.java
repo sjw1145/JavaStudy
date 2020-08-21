@@ -1,5 +1,5 @@
 /*	
-	longÁ¦¿Ü Á¤¼ö, char, String(1.7~)
+	longì œì™¸ ì •ìˆ˜, char, String(1.7~)
 	
 	int choice = 1;
 	switch( choice ) {

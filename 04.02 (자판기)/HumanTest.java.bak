@@ -4,10 +4,10 @@ public class HumunTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Human h = new Human("ì² ìˆ˜", 5000);
+		Human h = new Human("Ã¶¼ö", 5000);
 		
-		Drink coke = new Drink("ì½”ì¹´ì½œë¼", 355, 1500);
-		Drink cider = new Drink("ì‚¬ì´ë‹¤", 500, 2000);
+		Drink coke = new Drink("ÄÚÄ«Äİ¶ó", 355, 1500);
+		Drink cider = new Drink("»çÀÌ´Ù", 500, 2000);
 		
 		VendingMachine vm = new VendingMachine(coke, cider);
 		
@@ -15,7 +15,7 @@ public class HumunTest {
 		
 		System.out.println(h.toStringCheck());
 		
-		Human y = new Human("ì˜í¬", 5000);
+		Human y = new Human("¿µÈñ", 5000);
 		y.setDrink(y.order(vm));
 	}
 

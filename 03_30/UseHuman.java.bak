@@ -5,6 +5,12 @@
 class Human {
 	private int age = 40;
 	private String name;
+	private boolean male;
+
+	public boolean isMale() {
+		return male;
+	}
+
 	// getter
 	// 멤버변수를 외부로 돌려준다.
 	public int getAge() {

@@ -1,32 +1,32 @@
 /*
-	ÀÔ·Â°ª : parameter(°¹¼ö Á¦ÇÑ ¾øÀ½)
-	Ãâ·Â°ª : return
-			°¹¼ö :	0(void)
+	ì…ë ¥ê°’ : parameter(ê°¯ìˆ˜ ì œí•œ ì—†ìŒ)
+	ì¶œë ¥ê°’ : return
+			ê°¯ìˆ˜ :	0(void)
 					or 
 					1(type)
 */
 class Operations {
-	// ÆÄ¶ó¹ÌÅÍ·Î Á¤¼ö1°³¸¦ ¹Ş°í 2¸¦ ´õÇÑ ÈÄ °á°ú¸¦ ¸®ÅÏ
+	// íŒŒë¼ë¯¸í„°ë¡œ ì •ìˆ˜1ê°œë¥¼ ë°›ê³  2ë¥¼ ë”í•œ í›„ ê²°ê³¼ë¥¼ ë¦¬í„´
 	// header
 	int plus2(int num) {
 		// body			
 		int result = num + 2;
-		// result¸¦ µ¹·ÁÁØ´Ù.
-		// returnÀº ¸Ş¼­µå°¡ Á¾·á(³¡)µÈ´Ù´Â ÀÇ¹Ì¸¦ °¡Áø´Ù.
+		// resultë¥¼ ëŒë ¤ì¤€ë‹¤.
+		// returnì€ ë©”ì„œë“œê°€ ì¢…ë£Œ(ë)ëœë‹¤ëŠ” ì˜ë¯¸ë¥¼ ê°€ì§„ë‹¤.
 		return result;
 	}
 
-	// Á¤¼öµÑÀ» ÀÔ·Â¹Ş¾Æ ±× ÇÕÀ» ÄÜ¼Ö¿¡ Ãâ·ÂÇÏ´Â ¸Ş¼­µå¸¦ ÀÛ¼ºÇÏ½Ã¿À
+	// ì •ìˆ˜ë‘˜ì„ ì…ë ¥ë°›ì•„ ê·¸ í•©ì„ ì½˜ì†”ì— ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œë¥¼ ì‘ì„±í•˜ì‹œì˜¤
 	void printSum(int num1, int num2) {
 		int result = num1 + num2;
-		System.out.println("ÇÕ :" + result);
+		System.out.println("í•© :" + result);
 		
 	}
 	
 }
 class UseOperations {
 	public static void main(String[] args) {
-		// °´Ã¼»ı¼º -> ¸â¹öº¯¼ö, ¸Ş¼­µå¸¦ ¸Ş¸ğ¸®¿¡ ¿Ã¸°´Ù.
+		// ê°ì²´ìƒì„± -> ë©¤ë²„ë³€ìˆ˜, ë©”ì„œë“œë¥¼ ë©”ëª¨ë¦¬ì— ì˜¬ë¦°ë‹¤.
 		Operations o = new Operations();
 		// int plus2(int num1) { ... }
 		o.plus2(100);
