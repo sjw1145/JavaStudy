@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="some" class="org.green.diTest.Some" />
+	
+	<bean id="mySome" class="org.green.diTest.Some">
+		<constructor-arg value="java" />	
+	</bean>	
+	<bean id="yourSome" class="org.green.diTest.Some">
+		<property name="contents" value="JSP" />
+	</bean>
+	<bean id="obj" class="org.green.diTest.Other">
+		<property name="some" ref="yourSome"/>
+	</bean>	
+	<bean id="myCat" class="org.green.diTest.Cat" />
+	<bean id="myDog" class="org.green.diTest.Dog" />
+	
+	<bean id="ball1" class="org.green.diTest.Ball">
+		<constructor-arg value="1" />
+	</bean>
+	<bean id="ball2" class="org.green.diTest.Ball">
+		<constructor-arg value="2" />
+	</bean>
+	<bean id="ball3" class="org.green.diTest.Ball">
+		<constructor-arg value="3" />
+	</bean>
+	<bean id="myBasket" class="org.green.diTest.BallBasket">
+		<property name="arr">
+			<!-- 배열, List -->
+			<list>
+				<value>first</value>
+				<value>second</value>
+				<value>third</value>
+			</list>
+		</property>
+		<property name="list">
+			<list>
+				<ref bean="ball1" />
+				<ref bean="ball2" />
+				<ref bean="ball3" />
+			</list>
+		</property>
+		<!-- 
+		<property name="">
+			<set>
+				<ref bean="ball1" />
+				<ref bean="ball2" />
+				<ref bean="ball3" />
+			</set>
+		</property>
+		<property name="">
+			<map>
+				<entry key="ball1" value-ref="ball1" />
+				<entry key-ref="id" value-ref="id" />
+			</map>
+		</property>
+		 -->
+	</bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+

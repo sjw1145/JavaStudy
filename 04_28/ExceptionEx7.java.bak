@@ -1,0 +1,20 @@
+class ExceptionEx7 {
+	public static void main(String[] args)	{
+		/*
+			try-catch-finally 는 서로 중첩이 가능하다.
+
+		*/
+		try {		
+		} catch() {
+			try {
+			} catch() {
+				
+			}
+		} finally {
+			try {
+			} catch() {
+			} finally {
+			}
+		}
+	}
+}

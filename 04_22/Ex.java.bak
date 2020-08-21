@@ -1,0 +1,11 @@
+interface IA {
+	void todo();
+}
+class B implements IA {
+
+}
+class Ex {
+	public static void main(String[] args)	{
+
+	}
+}

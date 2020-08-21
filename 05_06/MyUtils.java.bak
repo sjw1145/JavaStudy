@@ -1,0 +1,6 @@
+class MyUtils {
+	// frame을 화면 정중앙에 위치시키는 메서드를 완성하라.
+	public static void goCenter(JFrame frame)	{
+		
+	}
+}

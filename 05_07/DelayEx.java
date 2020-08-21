@@ -1,0 +1,12 @@
+class DelayEx {
+	public static void main(String[] args)	{
+		for(char c='a'; c<'z'; c++) {
+			System.out.print(c);
+			try {
+				// ms
+				Thread.sleep(50);
+			} catch(Exception e) {}
+		}
+		System.out.println();
+	}
+}

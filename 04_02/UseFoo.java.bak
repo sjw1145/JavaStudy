@@ -1,0 +1,19 @@
+class Foo {
+	private int num = 2;
+
+	public void todo(int num) {
+		System.out.println("this : " + this);
+		System.out.println(this.num);
+	}
+}
+class UseFoo {
+	public static void main(String[] args) {
+		Foo f = new Foo();
+		f.todo(4);
+		System.out.println("f : " + f);
+
+		Foo f2 = new Foo();
+		f2.todo(100);
+		System.out.println("f2 : " + f2);
+	}
+}

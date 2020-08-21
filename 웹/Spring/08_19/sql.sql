@@ -1,0 +1,6 @@
+CREATE TABLE dummy (
+	dnum		INT			PRIMARY KEY		AUTO_INCREMENT,
+	dvalue		CHAR(20)	NOT NULL
+);
+
+SELECT * FROM dummy;

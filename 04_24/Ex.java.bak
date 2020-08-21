@@ -1,0 +1,12 @@
+import java.util.*;
+class Ex {
+	public static void main(String[] args)	{
+		// ¹è¿­ -> List
+		List<Integer> list = Arrays.asList(1,2,3,4,5);
+		System.out.println(list);
+		
+		Vector<Integer> other = new Vector<Integer>(list);
+		other.remove(0);
+		System.out.println(other);
+	}
+}

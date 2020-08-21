@@ -1,0 +1,41 @@
+/*
+	실행 중 오류 -> 예외(Exception)
+
+	- 예외처리
+		-> 예외가 발생하면 뭘 해야하는지 알려준다.
+*/
+class ExceptionEx1 {
+
+	public static void divide(int num1, int num2) {
+		
+			int result = num1 / num2;
+			System.out.println(result);
+			
+	}
+
+	public static void main(String[] args)	{
+		divide(8, 2);
+		divide(8, 0);
+		System.out.println("end of main");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

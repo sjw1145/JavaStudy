@@ -1,0 +1,9 @@
+class StaticEx4 {
+	public static void methodStatic() {
+		StaticEx4 s = new StaticEx4();
+		s.methodNonstatic();
+	}
+	public void methodNonstatic() {
+		methodStatic();
+	}	
+}

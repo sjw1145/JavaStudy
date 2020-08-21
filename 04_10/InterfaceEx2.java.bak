@@ -1,0 +1,17 @@
+interface IA {
+	void todo();
+}
+interface IB {
+	void todo();
+}
+// 복수구현(implements) 가능
+class Foo implements IA, IB{
+	@Override
+	public void todo() {
+	}
+}
+class InterfaceEx2 {
+	public static void main(String[] args) {
+
+	}
+}
